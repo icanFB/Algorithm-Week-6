@@ -1,0 +1,48 @@
+class Me:
+    classroom = []
+
+    def __init__(self, name='', age=0, gender=''):
+        self.name = name
+        self.gender = gender
+        self.age = age
+
+    def show_my_cv(self):
+        print("My name is {} and I am {} years old. Gender: {}".format(self.name, self.age, self.gender))
+
+    def add_student(self):
+        Me.classroom.append(self.name)
+
+    def show_classroom(self):
+        for student in Me.classroom:
+            print(student)
+
+
+s1 = Me("Bengüsu", 19, "female")
+s2 = Me("Can", 20, "male")
+s3 = Me("Rabia",23,"female")
+s4 = Me("Enes",20,"male")
+s5 = Me("Eren",19,"male")
+s6 = Me("Kaan",19,"male")
+s7 = Me("Cem",20,"male")
+    
+
+s1.add_student()
+s2.add_student()
+s3.add_student()
+s4.add_student()
+s5.add_student()
+s6.add_student()
+s7.add_student()
+
+
+s1.show_my_cv()
+s2.show_my_cv()
+s3.show_my_cv()
+s4.show_my_cv()
+s5.show_my_cv()
+s6.show_my_cv()
+s7.show_my_cv()
+
+print("Classroom:")
+
+s1.show_classroom()
